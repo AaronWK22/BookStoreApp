@@ -1,0 +1,47 @@
+.category-result {
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 3px;
+    background-color: #fff;
+    .catagory-result-top {
+        display: flex;
+        padding: 0 10px 6px;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        &::after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            content: "";
+            width: 100%;
+            border-bottom: 1px solid #a3a3a3;
+        }
+        .catagory-result-top-btn {
+            display: flex;
+            gap: 12px;
+            & > button {
+                color: red;
+                border-color: red;
+            }
+        }
+    }
+    .category-result-main {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 20px;
+        .book-item {
+            grid-column: span 1;
+        }
+        .empty {
+            grid-column: span 1;
+            margin-top: 20px;
+            font-size: 24px;
+            text-align: center;
+        }
+    }
+    .pagination {
+        margin-top: 20px;
+        text-align: end;
+    }
+}

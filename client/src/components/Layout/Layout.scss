@@ -1,0 +1,29 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    min-height: 100vh;
+    background-color: #f0eded;
+    .header {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 20;
+    }
+    .layout {
+        display: flex;
+        margin: 0 auto;
+        max-width: 1200px;
+        min-height: 100%;
+        flex-direction: column;
+    }
+    .footer {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 100%;
+        bottom: 0;
+        z-index: 20;
+    }
+}
